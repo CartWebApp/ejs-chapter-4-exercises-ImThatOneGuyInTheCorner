@@ -1,9 +1,23 @@
 function range(start, end, step = 1) {
-  // Add code.
+  let ran = []
+  if(step <= 0) {
+    for(i = start; i > (end - 1); i += step) {
+      ran.push(i);
+    }
+  } else {
+    for(i = start; i < (end + 1); i += step) {
+      ran.push(i);
+    }
+  }
+  return(ran);
 }
 
 function sum(numbers) {
-  // Add code.
+  let done = 0;
+  for(i = 0; i < numbers.length; i++) {
+    done += numbers[i];
+  }
+  return done;
 }
 
 
