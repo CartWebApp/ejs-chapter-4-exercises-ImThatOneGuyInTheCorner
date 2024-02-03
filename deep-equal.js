@@ -1,7 +1,7 @@
 // Comments are the only way I can function now
 
 function deepEqual(value, reference) {
-  // Iterate for each operator
+  // Iterate for each property
   for(i = 0; i < Object.keys(value).length; i++) {
     // Grab that key 😎
     let key = Object.keys(value)[i];
